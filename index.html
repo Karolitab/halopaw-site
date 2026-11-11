@@ -52,16 +52,17 @@
   <header>
     <div class="brand">HaloPaw</div>
     <h1>Privacy Policy</h1>
-    <p class="date">Effective November 3, 2026</p>
+    <p class="date">Effective November 11, 2026</p>
   </header>
 
   <section class="short">
     <h2>In short</h2>
     <ul>
-      <li>HaloPaw has no accounts, no ads and no tracking. We never sell your data.</li>
+      <li>HaloPaw has no accounts and no ads, and never tracks you across other apps. We never sell your data.</li>
       <li>Almost everything stays on your phone: your pet's details, your memory book and your photos.</li>
       <li>The photos you choose leave your phone for one reason: so we can draw your pet in pixels.</li>
-      <li>Apple handles payments. We never see your card or your Apple ID.</li>
+      <li>Apple handles payments, or Stripe if you pay by card on the web. We never see your card or your Apple ID.</li>
+      <li>We count anonymous taps and screens to learn what helps people and what gets in the way.</li>
     </ul>
   </section>
 
@@ -87,7 +88,11 @@
   <p>The app makes a random ID the first time it talks to our server and keeps it on your phone. It is not linked to your name, email, Apple ID or advertising ID. We use it to give each phone one free drawing, and to send you back the same drawing if you ask again instead of charging for a new one. We keep your pet's drawings on our server, linked to this ID and to a fingerprint of the drawing.</p>
 
   <h3>To check your subscription</h3>
-  <p>Payments go through Apple. When you subscribe, the app sends our server the proof of purchase Apple signs for your subscription. We check it with Apple and keep its transaction number, so each subscription makes one set of animations for one pet. We never receive your card details or who you are.</p>
+  <p>When you subscribe in the app, Apple takes the payment. RevenueCat, our subscription service, keeps a record of it under a random customer ID it makes on your phone, so the app knows you have HaloPaw Pro. The app also sends our server the proof of purchase Apple signs for your subscription. We check it with Apple and keep its transaction number, so each subscription makes one set of animations for one pet.</p>
+  <p>Where card payment is offered and you choose it, the checkout is run by RevenueCat and the card payment by Stripe. They receive your email address and card details to take the payment and send your receipt. We never see your card details. To check that payment, our server asks RevenueCat whether your random customer ID has HaloPaw Pro.</p>
+
+  <h3>To understand how the app is used</h3>
+  <p>The app sends PostHog, our analytics service, a record of the screens you reach and the buttons you tap, for example which step of the questions you are on, whether the paywall was shown and which plan you picked. Each record carries a random ID made on your phone, the app version, your phone model and system version, and a rough location (country and city) worked out from your internet address. It never includes your pet's name, your photos, your memories or your pet's birthday. We use it only to improve HaloPaw.</p>
 
   <h3>To keep the service running</h3>
   <p>Our server writes short logs for each request: the time, whether it worked, how long it took and the first eight characters of the random app ID. We use them only to find and fix problems.</p>
@@ -96,19 +101,22 @@
   <ul>
     <li><strong>SpriteCook</strong> draws your pet from your photos.</li>
     <li><strong>Our cloud hosting provider</strong> runs our server and stores your pet's drawings.</li>
-    <li><strong>Apple</strong> handles subscriptions and payments under its own privacy policy.</li>
+    <li><strong>Apple</strong> handles in-app subscriptions and payments under its own privacy policy.</li>
+    <li><strong>RevenueCat</strong> keeps track of subscriptions and runs the card checkout on the web.</li>
+    <li><strong>Stripe</strong> takes card payments made on the web.</li>
+    <li><strong>PostHog</strong> counts how the app is used.</li>
   </ul>
   <p>These services may store data outside the European Union. When they do, we rely on the safeguards the law requires, such as the European Commission's standard contractual clauses.</p>
 
   <h2>What we never do</h2>
   <ul>
     <li>We do not show ads or use advertising IDs.</li>
-    <li>We do not use analytics tools or track you across other apps and websites.</li>
+    <li>We do not track you across other companies' apps and websites.</li>
     <li>We do not sell or share your data for marketing.</li>
   </ul>
 
   <h2>How long we keep it</h2>
-  <p>What is on your phone stays until you delete the app. Your pet's drawings and the random app ID stay on our server so you can get them back, until you ask us to delete them or we close the service. Logs are deleted once they are no longer needed to fix problems.</p>
+  <p>What is on your phone stays until you delete the app. Your pet's drawings and the random app ID stay on our server so you can get them back, until you ask us to delete them or we close the service. Logs are deleted once they are no longer needed to fix problems. Usage records in PostHog are kept only as long as they help us improve the app. Payment records are kept as long as tax law requires.</p>
 
   <h2>Your choices and rights</h2>
   <p>You can delete everything on your phone by deleting the app. To have your pet's drawings deleted from our server and from SpriteCook, email us at <span class="mail">halopawapp@yahoo.com</span> with your pet's name and roughly when you made it, so we can find it.</p>
@@ -122,7 +130,7 @@
   <p>If we change this policy, we will update the date at the top. If a change is important, we will also tell you in the app.</p>
 
   <footer>
-    HaloPaw by Tim Gabe Holding Sociedad Limitada. Questions: <span class="mail">halopawapp@yahoo.com</span>
+    HaloPaw by Tim Gabe Holding Sociedad Limitada. Questions: <span class="mail">halopawapp@yahoo.com</span>. <a href="terms.html">Terms of Use</a>
   </footer>
 </div>
 </body>
